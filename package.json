@@ -1,6 +1,8 @@
 {
   "type": "module",
   "dependencies": {
+    "@supabase/supabase-js": "^2.41.1",
+    "node-fetch": "^3.3.2",
     "puppeteer": "^22.6.1"
   }
 }
