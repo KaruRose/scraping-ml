@@ -7,10 +7,11 @@ async function updateProductAvailabilities () {
     .select('*')
 
   const listProd = []
+  let counter = 1
 
   for (const prod of incProducts) {
-    if (prod.link && !prod.link.includes('google')) {
-      console.log(`Updating stock of: ${prod.name}`)
+    if (prod.link) {
+      console.log(`${counter}/${incProducts.length} - Updating stock of: ${prod.name}`)
       try {
         const { qty } = await startDownload(prod.link)
         listProd.push({
@@ -26,6 +27,7 @@ async function updateProductAvailabilities () {
         })
       }
     }
+    counter++
   }
 
   console.log('upsert')
