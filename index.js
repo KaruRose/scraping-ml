@@ -3,7 +3,6 @@ import puppeteer from "puppeteer";
 const urls = [
   "https://articulo.mercadolibre.com.ve/MLV-756889406-funko-pop-stranger-things-dustin-demogorgon-eleven-with-eggo-_JM#position=2&search_layout=grid&type=item&tracking_id=caf2aad3-89f4-4c37-bf4d-666492ca9641",
   "https://articulo.mercadolibre.com.ve/MLV-777905916-figura-tipo-funko-pop-lionel-messi-_JM#position=1&search_layout=grid&type=item&tracking_id=b2c8d702-8e0c-45ed-b13b-6a4885428c17"
-
 ];
 
 

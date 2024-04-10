@@ -4,5 +4,11 @@
     "@supabase/supabase-js": "^2.41.1",
     "node-fetch": "^3.3.2",
     "puppeteer": "^22.6.1"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }
