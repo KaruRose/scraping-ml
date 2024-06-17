@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
-process.loadEnvFile()
+import 'dotenv/config'
 
 export const supabase = createClient(
   process.env.APP_SUPABASE_URL ?? '',

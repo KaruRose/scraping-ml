@@ -31,12 +31,16 @@ async function updateProductAvailabilities () {
   }
 
   console.log('upsert')
-  const { data, error } = await supabase
+  const { error } = await supabase
     .from('inc_products')
     .upsert(listProd)
     .select()
-  console.log(data)
-  console.log(error)
+
+  if (error) {
+    console.log(error)
+  } else {
+    // console.log(data.length())
+  }
 }
 
 async function startDownload (url) {
