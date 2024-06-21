@@ -60,6 +60,7 @@ async function validatePriceChange () {
     .from('inc_products')
     .select('*')
     .eq('available', true)
+    .eq('hidden', false)
 
   const list = []
   let counter = 1
